@@ -10,7 +10,15 @@ function Login() {
                 width={200}
                 className='rounded-full object-cover '
                 />
-                <button onClick={authenticate} className='bg-yellow-500 rounded-lg p-5 font-bold animate-pulse'>Login to the METAVERSE</button>
+                <button onClick={authenticate} className='bg-yellow-500 rounded-lg p-5 font-bold animate-pulse'>Login to the METAVERSE</button >
+                <h3 
+                className='text-center bg-gray-900 p-2 rounded-full text-md font-bold italic drop-shadow-md text-white'>
+                    To enter this metaverse you need to have a 
+                    <a className="text-center cursor-pointer text-purple-500" 
+                    href="https://metamask.io/">
+                        {' '} MetaMask {' '}
+                    </a> 
+                    account and extension</h3>
             </div>
 
             <div>
@@ -19,6 +27,7 @@ function Login() {
                 layout="fill"
                 />
             </div>
+
         </div>
     )
 }
